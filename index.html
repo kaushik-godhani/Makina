@@ -1,0 +1,554 @@
+<html>
+    <head>
+        <title>Makina Feb</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="sdrstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="sdrscript.js" defer></script>
+        
+    </head>
+    <body>
+        <div class="header_div">
+            <header>
+                <div class="header_container">
+                    <div class="logo grid-md-2">
+                        <img src="components/logo/makina-fab-white.png" alt="makina_logo"/>
+                    </div>
+<!-- 
+                    <nav class="topnav">
+                        <a href="#" class="logo">Logo</a> -->
+                        <div class="mobile-header">
+                            <div class="hamburger-icon" id="icon">
+                                <div class="icon-1" id="a"></div>
+                                <div class="icon-2" id="b"></div>
+                                <div class="icon-3" id="c"></div>
+                                <div class="clear"></div>
+                              </div>
+                              
+                              <nav id="nav">
+                                 
+                                <ul>
+                                    <li class="dark-text">
+                                        Home
+                                    </li>
+                                    <li class="light-text"><a href="aboutus.html" style="color: white;">About Us</a></li>
+                                    <li class="light-text">Services</li>
+                                    <li class="light-text">Projects</li>
+                                    <li>
+                                        <div class="contact-button-div grid-md-2">
+                                            <button onclick="openContact()"  class="contact-button trigger">Contact Us</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                              
+                              </nav>
+                              
+                              <div class="dark-blue" id="blue"></div>
+                        </div>
+                        
+                        <div class="desktop-header">
+                        <div class=" menu grid-md-6" >
+                            <div class="header-menu" >
+                                <ul>
+                                    <li class="dark-text">
+                                        Home
+                                    </li>
+                                    <li class="light-text"><a href="aboutus.html">About Us</a></li>
+                                    <li class="light-text">Services</li>
+                                    <li class="light-text">Projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="desktop-header-contact-btn contact-button-div grid-md-2">
+                            <button onclick="openContact()" class="contact-button trigger">Contact Us</button>
+                        </div>
+                    <!-- </nav> -->
+
+
+                    
+                    <div class="form-popup" id="myForm" style="display: none;">
+                        <div class="contact-det-section">
+                            <div class="exit-contact">
+                                <img onclick="closeContact()" src="components/icon/close.png" />
+                            </div>
+                            <div class="contact-info">
+                                <h3>Reach out to us</h3>
+                                <p>Makina Fab is providing a wide range of uPVC windows & doors.</p>
+                                <div class="contact-phone">
+                                    <img src="components/icon/phone.png" />
+                                    <div class="contact-phone-number">
+                                        <p>+91 88662 44548</p>
+                                        <p>+91 90339 74627</p>
+                                    </div>
+                                </div>
+                                <div class="contact-mail">
+                                    <img src="components/icon/mail.png" />
+                                    <div class="contact-phone-number">
+                                        <p>info@makinafab.in</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-section">
+                            <p style="color: #236BFE;">Hello there!</p>
+                            <h3>Send us your queries</h3>
+                            <form action="/action_page.php" class="form-container">
+                                <div class="field">
+                                    <input type="text" name="fullname" id="fullname" placeholder="Jane Appleseed">
+                                    <label for="fullname">Name</label>
+                                    <span class="field__clear">clear</span>
+                                  </div>
+
+                                  <div class="field">
+                                    <input type="email" name="email" id="email" placeholder="jane.appleseed@example.com">
+                                    <label for="email">Email address</label>
+                                    <span class="field__clear">clear</span>
+                                  </div>
+
+                                  <div class="field">
+                                    <textarea name="textarea" id="textarea" placeholder="Type your message here..."></textarea>
+                                    <label for="textarea">Message</label>
+                                    <span class="field__clear"><i class="icon-clear-input"></i></span>
+                                    <span class="field__clear">clear</span>
+                                  </div>
+                            
+                                <button type="submit" class="submit-btn">Contact Us</button>
+                            
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="header_background">
+                <div class="main-section">
+                    <div class="header-display" >
+                        <div class="header-title-text grid-md-6">
+                            <h1 class="header-title">Choose the best <span class="text-color-gradiant"><b>uPVC</b></span> Doors & Windows</h1>
+                            <p>Makina Fab is providing a wide range of customized uPVC windows, uPVC doors and other building materials to its customers.</p>
+                            <button class="title-contact-button">Get in touch</button>
+                        </div>
+                        <div class="header-front-img-grid grid-md-6">
+                            <div class="img-grid-1">
+                                <img class="image1" src="components/img/4/1.png">
+                                <img class="image2" src="components/img/4/2.png">
+                            </div>
+                            <div class="img-grid-2">
+                                <img class="image3" src="components/img/4/3.png">
+                                <img class="image4" src="components/img/4/4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bg">&nbsp;</div>
+        </div>
+        <div class="section2">
+            <div class="title-question">
+                <h3>Why Makina?</h3>
+            </div>
+            <div class="title-answer">
+                <p>Makina uPVC is one of the best in the market. Our products go through multiple quality checks and holds numerous certifications to its name, giving you a myriad of reasons to choose Makina uPVC.</p>
+            </div>
+            <div class="elements">
+                <div class="row">
+                <div class=" col element grid-md-4">
+                    <div class="elment-item">
+                        <div class="elment-logo-back">
+                            <img class="logo-img" src="components/img/fire.png">
+                        </div>
+                        <div class="element-details">
+                            <h5>Fire Resistant</h5>
+                            <p>Unlike their timber equivalents, uPVC materials used in doors and windows are fire resistant and do not support or intensify accidental fires.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col element grid-md-4">
+                    <div class="elment-item">
+                        <div class="elment-logo-back">
+                            <img class="logo-img" src="components/img/bug.png">
+                        </div>
+                        <div class="element-details">
+                            <h5>Antifungal and Anti-termite</h5>
+                            <p>Our uPVC is unaffected by common chewing insects and termites, so it is completely resistant to rotting and decay.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col element grid-md-4">
+                    <div class="elment-item">
+                        <div class="elment-logo-back">
+                            <img class="logo-img" src="components/img/sound.png">
+                        </div>
+                        <div class="element-details">
+                            <h5>Soundproof</h5>
+                            <p>Our soundproofing products will help to insulate your home or commercial property against external noise, thus providing increased levels of comfort and privacy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col element grid-md-4">
+                    <div class="elment-item">
+                        <div class="elment-logo-back">
+                            <img class="logo-img" src="components/img/cloud.png">
+                        </div>
+                        <div class="element-details">
+                            <h5>Weather Proof</h5>
+                            <p>Eget duis arcu facilisis mi. Risus penatibus aliquam diam dolor amet a cras.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col element grid-md-4">
+                    <div class="elment-item">
+                        <div class="elment-logo-back">
+                            <img class="logo-img" src="components/img/thermal.png">
+                        </div>
+                        <div class="element-details">
+                            <h5>Thermal Insulators</h5>
+                            <p>Eget duis arcu facilisis mi. Risus penatibus aliquam diam dolor amet a cras.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col element grid-md-4">
+                    <div class="elment-item">
+                        <div class="elment-logo-back">
+                            <img class="logo-img" src="components/img/gear.png">
+                        </div>
+                        <div class="element-details">
+                            <h5>Low Maintenance</h5>
+                            <p>uPVC doors and windows do not need to be repaired or maintained on a regular basis. They do not rot, wrap, or corrode, making them a more cost-effective solution over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="info-section">
+                <div class="door-info">
+                    <div class="door-info-img grid-md-6">
+                        <img src="components/img/door.jpg"/>
+                    </div>
+                    <div class="door-info-text grid-md-6">
+                        <div class="door-info-text-icon">
+                            <img src="components/icon/door.png" />
+                        </div>
+                        <div class="door-info-text-info">
+                            <h4>uPVC Doors</h4>
+                            <p>If you are on the lookout for an internal door, a balcony door, or any other door types in India, then the vast collection of high-quality uPVC doors by Makina is sure to meet... <span>Read more</span></p>
+                            <ul>
+                                <li>SLIDING DOORS</li>
+                                <li>FRENCH DOORS</li>
+                                <li>CASEMENT DOORS</li>
+                                <li>SLIDING FOLDING DOORS</li>
+                            </ul>
+                        </div>
+                        <div class="door-info-text-button">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="win-info">
+                    <div class="win-info-text grid-md-6">
+                        <div class="win-info-text-icon">
+                            <img src="components/icon/win.png" />
+                        </div>
+                        <div class="win-info-text-info">
+                            <h4>uPVC Windows</h4>
+                            <p> Being the best among uPVC windows manufacturers in the country, Makina brings to you an extensive range of gorgeous and exquisite home window designs that will not... <span>Read more</span></p>
+                            <ul>
+                                <li>SLIDING WINDOWS</li>
+                                <li>FIXED WINDOWS</li>
+                                <li>TOP HUNG WINDOWS</li>
+                                <li>CASEMENT WINDOWS</li>
+                                <li>MORE...</li>
+                            </ul>
+                        </div>
+                        <div class="win-info-text-button">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div class="win-info-img grid-md-6">
+                        <img src="components/img/window.jpg"/>
+                    </div>
+                </div>
+                <div class="door-info">
+                    <div class="door-info-img grid-md-6">
+                        <img src="components/img/profile.png"/>
+                    </div>
+                    <div class="door-info-text grid-md-6">
+                        <div class="door-info-text-icon">
+                            <img src="components/icon/pro.png" />
+                        </div>
+                        <div class="door-info-text-info">
+                            <h4>uPVC Profile</h4>
+                            <p>Alongside being the fabricators of uPVC doors and windows, we also extrude uPVC profiles. These profiles are incredibly smart and act as the perfect frames for the new-age doors and windows.</p>
+                            <ul>
+                                <li>CASEMENT SERIES [ 60mm, 70mm ]</li>
+                                <li>SLIDING SERIES [ 62mm, 88mm ]</li>
+                                <li>VILLA WINDOW SERIES</li>
+                                <li>SLIDING-FOLDING DOOR SERIES</li>
+                                <li>MONORAIL WINDOW</li>
+                            </ul>
+                        </div>
+                        <div class="door-info-text-button">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="includedContent" class="core-slider">
+            <h2>Gallary</h2>
+            <span class="text-color-gradiant">The Best Of Our Previous Work</span>
+            <div class="wrapper slider">
+                
+                <div class="carousel">
+                  <img src="images/img-1.jpg" alt="img" draggable="false">
+                  <img src="images/img-2.jpg" alt="img" draggable="false">
+                  <img src="images/img-3.jpg" alt="img" draggable="false">
+                  <img src="images/img-4.jpg" alt="img" draggable="false">
+                  <img src="images/img-5.jpg" alt="img" draggable="false">
+                  <img src="images/img-6.jpg" alt="img" draggable="false">
+                  <img src="images/img-7.jpg" alt="img" draggable="false">
+                  <img src="images/img-8.jpg" alt="img" draggable="false">
+                  <img src="images/img-9.jpg" alt="img" draggable="false">
+                </div>
+                
+              </div>
+              <span class="slider-arrow">
+                <img id="left" src="components/icon/Arrow-Left.png" />
+                <p style="color:#868687">DRAG TO EXPLORE</p>
+                <img id="right" src="components/icon/Arrow-Right.png" />
+              </span>
+        </div>
+        <div class="services">
+            <div class="service-line">
+                <h3>Catering To All Your Needs</h3>
+                <h5>END-TO-END SOLUTION</h5>
+            </div>
+            <div class="services-details">
+                <div class="row row-start">
+                    <div class="col  grid-md-4">
+                        <div class="">
+                            <p><b>Consultation Visit</b></p>
+                            <div class="visit-icon">
+                                <img src="components/services/01.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col  grid-md-4">
+                        <div class="survey">
+                            <p><b>Survey</b></p>
+                            <span>Final Measurement & Discussion</span>
+                            <div class="visit-icon">
+                                <img src="components/services/03.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col  grid-md-4">
+                        <div class="">
+                            <p><b>Delivery &Installation</b></p>
+                            <div class="visit-icon">
+                                <img src="components/services/05.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col  grid-md-4">
+                        <div class="">
+                            <p><b>After SaleSupport</b></p>
+                            <div class="visit-icon">
+                                <img src="components/services/07.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mide">
+                    <div class="row secdrow">
+                        <div class="col  grid-md-4">
+                            <div class="visit">
+                                <div class="visit-icon">
+                                    <img src="components/services/02.png"/>
+                                </div>
+                                <p><b>Customized Designs</b></p>
+                            </div>
+                        </div>
+                        <div class="col  grid-md-4" >
+                            <div class="visit">
+                                <div class="visit-icon">
+                                    <img src="components/services/04.png"/>
+                                </div>
+                                <p><b>Manufacturing</b></p>
+                            </div>
+                        </div>
+                        <div class="col  grid-md-4">
+                            <div class="visit">
+                                <div class="visit-icon">
+                                    <img src="components/services/06.png"/>
+                                </div>
+                                <p><b>Cleaning & Handover</b></p>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-in">
+                <div class="row">
+                    <div class="col col-a">
+                        <img src="components/logo/makina-fab-white.png" alt="makina_logo"/>
+                        <p>Makina Fab is providing a wide range of uPVC windows & doors.</p>
+                        <div class="social">
+                            <div class="social-icon" style="margin-left: 0rem;">
+                                <img src="components/social-icon/twitter.png" />
+                            </div>
+                            <div class="social-icon">
+                                <img src="components/social-icon/in.png" />
+                            </div>
+                            <div class="social-icon">
+                                <img src="components/social-icon/fb.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-b">
+                        <h4>Location</h4>
+                        <p>Doam No.-3, RJD Farm, Nr. Sarthana Police Station, Sarthana-Jakatnaka, Varachha Road, Surat-395 006</p>
+                    </div>
+                    <div class="col col-c">
+                        <h4>Quick Links</h4>
+                        <p>Home</p>
+                        <p>About Us</p>
+                        <p>Services</p>
+                        <p>Projects</p>
+                    </div>
+                    <div class="col col-c">
+                        <h4>Get in Touch</h4>
+                        <p>+91 88662 44548</p>
+                        <p>+91 90339 74627</p>
+                        <p>info@makinafab.in</p>
+                    </div>
+                </div>
+                <hr size="8" color="#868687"/>
+            </div>
+            <p>© 2023 Makina fab, Copyright and All Rights Reserved</p>
+        </div>
+        
+    </body>
+    <script>
+        
+
+
+        var icon = document.getElementById("icon");
+        var icon1 = document.getElementById("a");
+        var icon2 = document.getElementById("b");
+        var icon3 = document.getElementById("c");
+        var nav = document.getElementById('nav');
+        var blue = document.getElementById("blue");
+
+        icon.addEventListener('click', function() {
+        icon1.classList.toggle('a');
+        icon2.classList.toggle('c');
+        icon3.classList.toggle('b');
+        nav.classList.toggle('show');
+        blue.classList.toggle('slide');
+        });
+
+
+        function openContact() {
+            document.getElementById("myForm").style.display = "block";
+            nav.classList.toggle('show');
+            blue.classList.toggle('slide');
+            icon1.classList.toggle('a');
+            icon2.classList.toggle('c');
+            icon3.classList.toggle('b');
+        }
+
+        function closeContact() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+        // var menu = document.querySelector('.menu');
+        // var menuIcon = document.querySelector('.menu-icon');
+
+        // menuIcon.addEventListener('click', function() {
+        // if (menu.classList.contains('show')) {
+        //     menu.classList.remove('show');
+        // } else {
+        //     menu.classList.add('show');
+        // }
+        // });
+
+
+
+        // const modal = document.querySelector(".modal");
+        // const trigger = document.querySelector(".trigger");
+        // const closeButton = document.querySelector(".close-button");
+
+        // function toggleModal() {
+        //     modal.classList.toggle("show-modal");
+        // }
+
+        // function windowOnClick(event) {
+        //     if (event.target === modal) {
+        //         toggleModal();
+        //     }
+        // }
+
+        // trigger.addEventListener("click", toggleModal);
+        // closeButton.addEventListener("click", toggleModal);
+        // window.addEventListener("click", windowOnClick);
+
+
+
+        //----------------------------------
+
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+        didScroll = true;
+        });
+
+        setInterval(function () {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+        }, 20);
+
+        function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta) return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            $('header').removeClass('nav-down').addClass('nav-up');
+        } else {
+            // Scroll Up
+            if(st < $(document).height()) {
+                $('header').removeClass('nav-up').addClass('nav-down-b');
+            }
+        }
+
+        if (st < delta){
+            // Scroll Down
+            $('header').removeClass('nav-down-b').addClass('nav-down');
+        }
+
+
+        lastScrollTop = st;
+        }
+    </script>
+</html>
