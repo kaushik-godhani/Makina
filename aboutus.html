@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>Makina Feb</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="sdrstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!-- <script src="sdrscript.js" defer></script> -->
+        <script>
+            function openContact() {
+                    document.getElementById("myForm").style.display = "block";
+                }
+
+                function closeContact() {
+                    document.getElementById("myForm").style.display = "none";
+                }
+        </script>
+    </head>
+    <body>
+        <div class="header_div">
+            <header>
+                <div class="header_container">
+                    <div class="logo grid-md-2">
+                        <img src="components/logo/makina-fab-dark.png" alt="makina_logo"/>
+                    </div>
+                    <!-- <div class="menu grid-md-6">
+                        <div class="header-menu">
+                            <ul >
+                                <li class="light-text" style="color: #868687">
+                                    Home
+                                </li>
+                                <li class="dark-text" style="color: #868687"><a href="aboutus.html">About Us</a></li>
+                                <li class="light-text" style="color: #868687">Services</li>
+                                <li class="light-text" style="color: #868687">Projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-button-div grid-md-2">
+                        <button onclick="openContact()" class="submit-btn">Contact Us</button>
+                    </div> -->
+
+                    <div class="hamburger-icon" id="icon">
+                        <div class="icon-1" id="a"></div>
+                        <div class="icon-2" id="b"></div>
+                        <div class="icon-3" id="c"></div>
+                        <div class="clear"></div>
+                      </div>
+                      
+                      <nav id="nav">
+                         
+                        <ul>
+                            <li class="dark-text">
+                                <a href="index.html" style="color: white;">Home</a>
+                            </li>
+                            <li class="light-text"><a href="aboutus.html" style="color: white;">About Us</a></li>
+                            <li class="light-text">Services</li>
+                            <li class="light-text">Projects</li>
+                            <li>
+                                <div class="contact-button-div grid-md-2">
+                                    <button onclick="openContact()"  class="contact-button trigger">Contact Us</button>
+                                </div>
+                            </li>
+                        </ul>
+                      
+                      </nav>
+                      
+                      <div class="dark-blue" id="blue"></div>
+
+
+                    <div class="form-popup" id="myForm" style="display: none;">
+                        <div class="contact-det-section">
+                            <div class="exit-contact">
+                                <img onclick="closeContact()" src="components/icon/close.png" />
+                            </div>
+                            <div class="contact-info">
+                                <h3>Reach out to us</h3>
+                                <p>Makina Fab is providing a wide range of uPVC windows & doors.</p>
+                                <div class="contact-phone">
+                                    <img src="components/icon/phone.png" />
+                                    <div class="contact-phone-number">
+                                        <p>+91 88662 44548</p>
+                                        <p>+91 90339 74627</p>
+                                    </div>
+                                </div>
+                                <div class="contact-mail">
+                                    <img src="components/icon/mail.png" />
+                                    <div class="contact-phone-number">
+                                        <p>info@makinafab.in</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-section">
+                            <p style="color: #236BFE;">Hello there!</p>
+                            <h3>Send us your queries</h3>
+                            <form action="/action_page.php" class="form-container">
+                                <div class="field">
+                                    <input type="text" name="fullname" id="fullname" placeholder="Jane Appleseed">
+                                    <label for="fullname">Name</label>
+                                    <span class="field__clear">clear</span>
+                                  </div>
+
+                                  <div class="field">
+                                    <input type="email" name="email" id="email" placeholder="jane.appleseed@example.com">
+                                    <label for="email">Email address</label>
+                                    <span class="field__clear">clear</span>
+                                  </div>
+
+                                  <div class="field">
+                                    <textarea name="textarea" id="textarea" placeholder="Type your message here..."></textarea>
+                                    <label for="textarea">Message</label>
+                                    <span class="field__clear"><i class="icon-clear-input"></i></span>
+                                    <span class="field__clear">clear</span>
+                                  </div>
+                            
+                                <button type="submit" class="submit-btn">Contact Us</button>
+                            
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="section2" style="padding-top: 27%;">
+                <div class="title-question">
+                    <h1><span class="text-color-gradiant">About us</span></h1>
+                </div>
+                <div class="title-answer">
+                    <p style="font-size: small;">Nec semper convallis in commodo tellus et risus dui. Ipsum amet ut ullamcorper justo. Pellentesque nec dictum ipsum purus sociis viverra tincidunt pellentesque faucibus. Felis eget nisi diam urna. Lorem gravida lacus suspendisse congue fusce sit est proin metus. Pellentesque netus nam pretium justo. Id ut neque sit sit semper lacus a justo hac. Auctor orci quisque hendrerit volutpat volutpat at aliquet amet nibh.</p>
+                </div>
+                <div>
+                    <img style="max-width: 60%; padding-top: 20px; padding-bottom: 40px;" src="components/img/door-wide.png" />
+                </div>
+            </div>
+        </div>
+        <div class="mission-vision" >
+            <div class="mv-section">
+                <div class="mission" >
+                    <img src="components/img/point.png"/>
+                    <h4>Mission</h4>
+                    <p>If you are on the lookout for an internal door, a balcony door, or any other door types in India, then the vast collection of high-quality uPVC doors by Makina is sure to meet...
+                        your needs and preferences.</p>
+                </div>
+                <div class="vision" >
+                    <img src="components/img/point.png"/>
+                    <h4>Vision</h4>
+                    <p>If you are on the lookout for an internal door, a balcony door, or any other door types in India, then the vast collection of high-quality uPVC doors by Makina is sure to meet...
+                        your needs and preferences.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section3">
+            <div class="info-section">
+                <div class="door-info" style="padding-top: 15%;">
+                    <div class="door-info-img grid-md-6">
+                        <img src="components/img/door.jpg"/>
+                    </div>
+                    <div class="door-info-text grid-md-6" >
+                        <div class="door-info-text-icon">
+                            <img src="components/icon/door.png" />
+                        </div>
+                        <div class="door-info-text-info">
+                            <h4>uPVC Doors</h4>
+                            <p>If you are on the lookout for an internal door, a balcony door, or any other door types in India, then the vast collection of high-quality uPVC doors by Makina is sure to meet... <span>Read more</span></p>
+                            <ul>
+                                <li>SLIDING DOORS</li>
+                                <li>FRENCH DOORS</li>
+                                <li>CASEMENT DOORS</li>
+                                <li>SLIDING FOLDING DOORS</li>
+                            </ul>
+                        </div>
+                        <div class="door-info-text-button">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-in">
+                <div class="row">
+                    <div class="col col-a">
+                        <img src="components/logo/makina-fab-white.png" alt="makina_logo"/>
+                        <p>Makina Fab is providing a wide range of uPVC windows & doors.</p>
+                        <div class="social">
+                            <div class="social-icon" style="margin-left: 0rem;">
+                                <img src="components/social-icon/twitter.png" />
+                            </div>
+                            <div class="social-icon">
+                                <img src="components/social-icon/in.png" />
+                            </div>
+                            <div class="social-icon">
+                                <img src="components/social-icon/fb.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-b">
+                        <h4>Location</h4>
+                        <p>Doam No.-3, RJD Farm, Nr. Sarthana Police Station, Sarthana-Jakatnaka, Varachha Road, Surat-395 006</p>
+                    </div>
+                    <div class="col col-c">
+                        <h4>Quick Links</h4>
+                        <p>Home</p>
+                        <p>About Us</p>
+                        <p>Services</p>
+                        <p>Projects</p>
+                    </div>
+                    <div class="col col-c">
+                        <h4>Get in Touch</h4>
+                        <p>+91 88662 44548</p>
+                        <p>+91 90339 74627</p>
+                        <p>info@makinafab.in</p>
+                    </div>
+                </div>
+                <hr size="8" color="#868687"/>
+            </div>
+            <p>© 2023 Makina fab, Copyright and All Rights Reserved</p>
+        </div>
+    </body>
+    <script>
+
+         var icon = document.getElementById("icon");
+        var icon1 = document.getElementById("a");
+        var icon2 = document.getElementById("b");
+        var icon3 = document.getElementById("c");
+        var nav = document.getElementById('nav');
+        var blue = document.getElementById("blue");
+
+        icon.addEventListener('click', function() {
+        icon1.classList.toggle('a');
+        icon2.classList.toggle('c');
+        icon3.classList.toggle('b');
+        nav.classList.toggle('show');
+        blue.classList.toggle('slide');
+        });
+
+        function openContact() {
+            document.getElementById("myForm").style.display = "block";
+            nav.classList.toggle('show');
+            blue.classList.toggle('slide');
+            icon1.classList.toggle('a');
+            icon2.classList.toggle('c');
+            icon3.classList.toggle('b');
+        }
+
+        function closeContact() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</html>
